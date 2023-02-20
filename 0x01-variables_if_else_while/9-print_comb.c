@@ -8,19 +8,18 @@
 
 int main(void)
 {
-int i;
+int x = 0;
 
-for (i = 0 ; i < 10 ; i++)
+while (x < 10)
 {
-if (i == 9)
-{
-putchar(i + '0');
-}
-else
+putchar(x + '0');
+if (x < 9)
 {
 putchar(',');
 putchar(' ');
 }
+x++;
 }
+putchar('\n');
 return (0);
 }
