@@ -8,17 +8,26 @@
 
 int main(void)
 {
-	int i;
-	int sum;
+int i = 0;
+long j = 1;
+long k = 2;
 
-	sum = 0
-
-for (i = 1 ; i <= 12586269025 ; i++)
+while (i < 50)
 {
-	sum = sum + i
+if (i == 0)
+printf("%ld", j);
 
+else if (i == 1)
+printf(", %ld", k);
+else
+{
+k += j;
+j = k - j;
+printf(", %ld", k);
 }
-printf("%d\n", sum);
-printf(',');
-printf(' ');
+++i;
+}
+printf("\n");
+return (0);
+
 }
